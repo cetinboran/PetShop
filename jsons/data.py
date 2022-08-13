@@ -40,7 +40,6 @@ class JSON:
                 customer_dict = {"id": person.id, "username": person.username, "password": person.password, "balance": person.balance, "type": person.type, "animals": { "dog": person.dog, "cat": person.cat}}
                 data.append(customer_dict)
             elif person.type == "Admin":
-                input(person)
                 admin_dict = {"id": person.id, "username": person.username, "password": person.password, "type": person.type}
                 data.append(admin_dict)
 

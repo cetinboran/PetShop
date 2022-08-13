@@ -16,11 +16,18 @@
         "id": 3,
         "username": "kaan",
         "password": "123",
-        "balance": 999705,
+        "balance": 999702,
         "type": "Customer",
         "animals": {
             "dog": 0,
-            "cat": 1
+            "cat": 4
         }
+    },
+    {
+        "id": 4,
+        "username": "anam",
+        "password": "anam",
+        "salary": "200",
+        "type": "Worker"
     }
 ]

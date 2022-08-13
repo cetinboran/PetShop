@@ -1,6 +1,4 @@
 from jsons.data import JSON
-from classes.animals import Dog,Cat
-from classes.person import Worker,Customer
 import Entrys.passwordManagement as passwordManagement
 
 # JSON file'larını configure edeceğimiz obje

@@ -2,17 +2,17 @@
     {
         "animalId": 1,
         "id": 1,
-        "name": "kaan",
+        "name": "got",
         "type": "Dog",
-        "rare": "common",
-        "cost": 5
+        "rare": "mal",
+        "cost": 1
     },
     {
         "animalId": 2,
         "id": 1,
-        "name": "Kaan",
+        "name": "kaan",
         "type": "Cat",
-        "rare": "common",
-        "cost": 5
+        "rare": "looser",
+        "cost": 1
     }
 ]
