@@ -28,5 +28,11 @@ adminList , WorkerList, customerList, personsList = ALL_PERSONS[0], ALL_PERSONS[
 # Abstract class'ı ile her type için farklı loop çağırıyorum.
 LoginPerson = passwordManagement.Login(personsList)
 if LoginPerson[0] != False:
-    LoginPerson[0].Loop(LoginPerson[0], personsList, dogList, catList, animalsList, LoginPerson[1])
-
+    if LoginPerson[1].type == "Worker":
+        LoginPerson[0].Loop(LoginPerson[0], dogList, catList, animalsList, LoginPerson[1])
+    elif LoginPerson[1].type == "Customer":
+        LoginPerson[0].Loop(LoginPerson[0], personsList, animalsList, LoginPerson[1])
+    elif LoginPerson[1].type == "Admin":
+        LoginPerson[0].Loop(LoginPerson[0], personsList, customerList, WorkerList, LoginPerson[1])
+    else:
+        print("There is no such job position ")

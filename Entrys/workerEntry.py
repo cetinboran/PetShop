@@ -3,7 +3,7 @@ from classes.animals import Dog, Cat
 from jsons.data import JSON
 
 class WorkerEntry(Login):
-    def Loop(self, personList, dogList, catList, animalsList, person):
+    def Loop(self, dogList, catList, animalsList, person):
         print(f"Login Successful. Hello {person.username}\n")
         while True:
             print("1 - Add Animal")

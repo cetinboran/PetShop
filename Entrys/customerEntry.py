@@ -2,7 +2,7 @@ from Entrys.login_loops import Login
 from jsons.data import JSON
 
 class CustomerEntry(Login):
-    def Loop(self, personList, dogList, catList, animalsList, person):
+    def Loop(self, personList, animalsList, person):
         print(f"Login Successful. Hello {person.username}\n")
         while True:
             print("1 - Show Animals")

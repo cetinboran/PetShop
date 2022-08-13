@@ -9,7 +9,7 @@
         "id": 2,
         "username": "boran",
         "password": "123",
-        "balance": 1000,
+        "salary": "1000",
         "type": "Worker"
     },
     {

@@ -34,7 +34,7 @@ class JSON:
         data = []
         for person in personsList:
             if person.type == "Worker":
-                worker_dict = {"id": person.id, "username": person.username, "password": person.password, "balance": person.balance, "type": person.type}
+                worker_dict = {"id": person.id, "username": person.username, "password": person.password, "salary": person.balance, "type": person.type}
                 data.append(worker_dict)
             elif person.type == "Customer":
                 customer_dict = {"id": person.id, "username": person.username, "password": person.password, "balance": person.balance, "type": person.type, "animals": { "dog": person.dog, "cat": person.cat}}
@@ -59,7 +59,7 @@ class JSON:
 
         for person in personsInfo:
             if person["type"] == "Worker":
-                w = Worker(person["username"], person["password"], person["balance"])
+                w = Worker(person["username"], person["password"], person["salary"])
                 worker.append(w)
                 personsList.append(w)
             elif person["type"] == "Customer":
