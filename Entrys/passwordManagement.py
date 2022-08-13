@@ -1,5 +1,6 @@
 from Entrys.workerEntry import WorkerEntry
 from Entrys.customerEntry import CustomerEntry
+from Entrys.adminEntry import AdminEntry
 
 def Login(personList):
     username = input("Enter your username: ")
@@ -9,6 +10,8 @@ def Login(personList):
             return [WorkerEntry, person]
         elif person.type == "Customer" and person.username == username and person.password == password:
             return [CustomerEntry, person]
+        elif person.type == "Admin" and person.username == username and person.password == password:
+            return [AdminEntry, person]
 
     print("username or password is incorrect")
     return [False,False]

@@ -29,4 +29,9 @@ class Customer(Person):
             self.dog,
             self.cat
         ]
+
+class Admin(Person):
+    def __init__(self, username, password, balance) -> None:
+        super().__init__(username, password, balance)
+        self.type = "Admin"
         

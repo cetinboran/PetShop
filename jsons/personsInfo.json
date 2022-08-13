@@ -1,20 +1,26 @@
 [
     {
         "id": 1,
+        "username": "root",
+        "password": "root",
+        "type": "Admin"
+    },
+    {
+        "id": 2,
         "username": "boran",
         "password": "123",
         "balance": 1000,
         "type": "Worker"
     },
     {
-        "id": 2,
+        "id": 3,
         "username": "kaan",
         "password": "123",
-        "balance": 999700,
+        "balance": 999705,
         "type": "Customer",
         "animals": {
             "dog": 0,
-            "cat": 2
+            "cat": 1
         }
     }
 ]

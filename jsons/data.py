@@ -39,6 +39,10 @@ class JSON:
             elif person.type == "Customer":
                 customer_dict = {"id": person.id, "username": person.username, "password": person.password, "balance": person.balance, "type": person.type, "animals": { "dog": person.dog, "cat": person.cat}}
                 data.append(customer_dict)
+            elif person.type == "Admin":
+                input(person)
+                admin_dict = {"id": person.id, "username": person.username, "password": person.password, "type": person.type}
+                data.append(admin_dict)
 
 
         with open("jsons/personsInfo.json", "w") as file:
@@ -48,6 +52,7 @@ class JSON:
     def init_persons(self):
         personsInfo = JSON.GetJson("personsInfo")
 
+        admin = []
         worker = []
         customer = [] 
         personsList = []
@@ -61,8 +66,12 @@ class JSON:
                 c = Customer(person["username"],person["password"], person["balance"], person["animals"]["dog"],person["animals"]["cat"])
                 customer.append(c)
                 personsList.append(c)
+            elif person["type"] == "Admin":
+                d = Admin(person["username"], person["password"], 0)
+                admin.append(d)
+                personsList.append(d)
                 
-        return [worker, customer, personsList]
+        return [admin, worker, customer, personsList]
 
 
     @staticmethod

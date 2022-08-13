@@ -16,7 +16,7 @@ animalsList, dogList, catList = ALL_ANIMALS[0], ALL_ANIMALS[1], ALL_ANIMALS[2]
 
 # Customer/Worker bilglerini json'dan çekip objelerini oluşturuyoruz ki json'u update'lediğimizde bozulmasın
 ALL_PERSONS = json.init_persons()
-customerList, WorkerList, personsList = ALL_PERSONS[0], ALL_PERSONS[1], ALL_PERSONS[2]
+adminList , WorkerList, customerList, personsList = ALL_PERSONS[0], ALL_PERSONS[1], ALL_PERSONS[2], ALL_PERSONS[3]
 
 # Update personList 
 
