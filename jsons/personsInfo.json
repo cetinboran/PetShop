@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "username": "boran",
+        "password": "123",
+        "balance": 1000,
+        "type": "Worker"
+    },
+    {
+        "id": 2,
+        "username": "kaan",
+        "password": "123",
+        "balance": 999700,
+        "type": "Customer",
+        "animals": {
+            "dog": 0,
+            "cat": 2
+        }
+    }
+]

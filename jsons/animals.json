@@ -1,0 +1,18 @@
+[
+    {
+        "animalId": 1,
+        "id": 1,
+        "name": "kaan",
+        "type": "Dog",
+        "rare": "common",
+        "cost": 5
+    },
+    {
+        "animalId": 2,
+        "id": 1,
+        "name": "Kaan",
+        "type": "Cat",
+        "rare": "common",
+        "cost": 5
+    }
+]
